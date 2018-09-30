@@ -1,0 +1,63 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <div style="text-align:center">
+  <h1>
+    Bienvenido a {{ title }}!
+  </h1>
+  <h2>
+    {{a+b}}
+  </h2>
+  <hr />
+   <button [disabled]="!listo" (click)="hacerAlgo()">Click me!</button>
+   <hr/>
+   <input type="text" placeholder="Tu nombre " [(ngModel)]="nombre" />
+   <hr />
+   <input type="text" placeholder="Tu apellido "
+   [(ngModel)]="apellido">
+   <hr />
+   Mi nombre completo es : {{nombre}}  {{apellido}}
+ 
+</div>
+-->
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">PlatziSquare!</a>
+  <div class="collapse navbar-collapse">
+    <div class="navbar-nav">
+      <li class="nav-item" routerLinkActive="active">
+      <a class="nav-item nav-link " routerLink="/lugares">Inicio </a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+      <a class="nav-item nav-link" routerLink="/contacto">Contacto</a>
+    </li>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+
+<!--
+<ul>
+  <ng-container *ngFor="let lugar of lugares; let i = index" [ngSwitch]="lugar.cercania">
+  <a>
+  <li contar-clicks [ngStyle]="{color: (lugar.active) ? 'black' : 'gray'} " [ngClass]="{numero_par : (i+1) % 2 !== 0}" [resaltar]="lugar.plan">
+    {{lugar.nombre}} - 
+    <span *ngSwitchCase="1" [ngStyle]="{color: 'green'}">Muy Cercano</span>
+    <span *ngSwitchCase="2" [ngStyle]="{color: 'black'}">Cercano</span>
+    <span *ngSwitchCase="3" [ngStyle]="{color: 'red'}">Lejano</span>
+  </li>
+  </a>
+  </ng-container>
+</ul>
+--->
+
+<!--
+
+<ul>
+  <ng-container *ngFor="let persona of personas">
+  <li *ngIf="persona.edad > 17">{{persona.nombre}}</li>
+  </ng-container>
+</ul>
+-->
+
